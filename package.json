@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@luozhu/eslint-config-base": "^1.8.0",
+    "@luozhu/prettier-config": "^1.0.3",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.0"
+  }
+}
