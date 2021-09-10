@@ -1,8 +1,25 @@
 {
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
     "@luozhu/eslint-config-base": "^1.8.0",
     "@luozhu/prettier-config": "^1.0.3",
+    "awesome-lint": "^0.18.0",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.2",
+    "cz-customizable": "^6.3.0",
     "eslint": "^7.32.0",
-    "prettier": "^2.4.0"
+    "prettier": "^2.4.0",
+    "yorkie": "^2.0.0"
+  },
+  "scripts": {
+    "commit": "git cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "gitHooks": {
+    "commit-msg": "commitlint -e -V"
   }
 }
