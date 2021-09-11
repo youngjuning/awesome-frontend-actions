@@ -12,7 +12,8 @@
     "yorkie": "^2.0.0"
   },
   "scripts": {
-    "commit": "git cz"
+    "commit": "git cz",
+    "lint": "eslint testdata/javascript --ext .js,.jsx,.ts,.tsx"
   },
   "config": {
     "commitizen": {

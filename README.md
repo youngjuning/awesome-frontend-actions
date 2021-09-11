@@ -9,3 +9,4 @@
 ## Lint
 
 - [Run eslint with reviewdog](https://github.com/reviewdog/action-eclint) - Run eslint with reviewdog.
+- [Commit Linter](https://github.com/marketplace/actions/commit-linter) - Lints Pull Request commits with commitlint.
