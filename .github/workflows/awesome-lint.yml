@@ -1,4 +1,4 @@
-name: Awesome Lint
+name: Lint
 on:
   push:
     branches: [main]
