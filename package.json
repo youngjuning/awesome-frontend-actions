@@ -13,7 +13,7 @@
   },
   "scripts": {
     "commit": "git cz",
-    "lint": "eslint testdata/javascript --ext .js,.jsx,.ts,.tsx"
+    "lint": "npx eslint testdata/javascript --ext .js,.jsx,.ts,.tsx"
   },
   "config": {
     "commitizen": {
