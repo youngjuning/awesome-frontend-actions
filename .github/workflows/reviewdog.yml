@@ -1,4 +1,4 @@
-name: Eslint
+name: reviewdog
 on: [pull_request]
 jobs:
   eslint:
@@ -9,5 +9,5 @@ jobs:
       - uses: reviewdog/action-eslint@v1
         with:
           github_token: ${{ github.token }}
-          reporter: github-pr-review # Change reporter.
+          reporter: github-check # Change reporter.
           eslint_flags: 'testdata/javascript/'
