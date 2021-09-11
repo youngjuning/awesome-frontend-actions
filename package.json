@@ -20,6 +20,7 @@
     }
   },
   "gitHooks": {
-    "commit-msg": "commitlint -e -V"
+    "commit-msg": "commitlint -e -V",
+    "pre-commit": "npx awesome-lint"
   }
 }
