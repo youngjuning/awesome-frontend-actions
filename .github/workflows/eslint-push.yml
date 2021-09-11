@@ -1,0 +1,14 @@
+name: Eslint
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: c-hive/gha-yarn-cache@v2
+    - name: Install modules
+      run: yarn --frozen-lockfile --ignore-engines --ignore-optional --no-bin-links --non-interactive --silent --ignore-scripts --production=false
+    - name: Run ESLint
+      run: yarn lint
