@@ -8,5 +8,5 @@
 
 ## Lint
 
-- [reviewdog/action-eslint](https://github.com/reviewdog/action-eclint) - Run eslint with reviewdog.
-- [wearerequired/lint-action](https://github.com/wearerequired/lint-action) - GitHub Action for detecting and auto-fixing lint errors.
+- [Run eslint with reviewdog](https://github.com/reviewdog/action-eclint) - Run eslint with reviewdog.
+- [ESlint Runner Action](https://github.com/marketplace/actions/eslint-runner-action) - Lint changed Pull Request files with ESLint from GitHub Action.
