@@ -1,13 +1,25 @@
-name: Eslint
-on: [pull_request]
+name: Lint
+
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   eslint:
-    name: eslint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: reviewdog/action-eslint@v1
+      - uses: c-hive/gha-yarn-cache@v2
+      - uses: actions/setup-node@v1
         with:
-          github_token: ${{ github.token }}
-          reporter: github-pr-review # Change reporter.
-          eslint_flags: 'testdata/javascript/'
+          node-version: 12
+      - run: yarn --frozen-lockfile
+      - uses: wearerequired/lint-action@v1
+        with:
+          eslint: true
